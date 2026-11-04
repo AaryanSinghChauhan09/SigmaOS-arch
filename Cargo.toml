@@ -9,6 +9,8 @@ repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-arch"
 readme = "README.md"
 
 [dependencies]
+toml = "0.8"
+thiserror = "1.0"
 sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
 
 [profile.release]
