@@ -1,17 +1,9 @@
 [package]
-name = "sigmaos-arch"
+name = "sigmaos_arch"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "SigmaOS arch"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-arch"
-readme = "README.md"
+description = "Architecture-specific CPU context, interrupt vector tables, and MMU page-table operations"
 
-[dependencies]
-toml = "0.8"
-thiserror = "1.0"
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_arch"
+path = "src/lib.rs"

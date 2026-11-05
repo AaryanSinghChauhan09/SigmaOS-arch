@@ -1,0 +1,16 @@
+[component]
+name = "SigmaOS-arch"
+tier = 0
+stability = "scaffold"
+language = "rust"
+description = "Architecture-specific CPU context, interrupt vector tables, and MMU page-table operations"
+upstream = ["https://github.com/rust-osdev/x86_64"]
+
+[contract]
+provides = ["arch-bringup", "page-tables", "cpu-context-switch"]
+depends_on = []
+
+[maturity]
+status = "Scaffold"
+test_evidence = "Compiles and passes AAA unit tests"
+next_milestone = "Hardware and runtime integration"
