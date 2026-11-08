@@ -2,7 +2,8 @@
 name = "sigmaos_arch"
 version = "0.1.0"
 edition = "2021"
-description = "Architecture-specific CPU context, interrupt vector tables, and MMU page-table operations"
+license = "MIT"
+description = "SigmaOS arch component inspired by Linux Mint / Omarchy / Arch Linux."
 
 [lib]
 name = "sigmaos_arch"
