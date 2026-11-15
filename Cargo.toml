@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "SigmaOS arch component inspired by Linux Mint / Omarchy / Arch Linux."
+default-run = "arch"
 
 [lib]
 name = "sigmaos_arch"
 path = "src/lib.rs"
+
+[[bin]]
+name = "arch"
+path = "src/main.rs"
