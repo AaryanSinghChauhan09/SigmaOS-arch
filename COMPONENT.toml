@@ -1,7 +1,7 @@
 [component]
 name = "SigmaOS-arch"
 tier = 0
-stability = "scaffold"
+stability = "beta"
 language = "rust"
 description = "Architecture and hardware abstraction code for SigmaOS. The crate exposes arch and re-exports its Arch interface. The current module tree contains shared HAL and portability code, x86_64 support, and target-gated AArch64 and RISC-V modules."
 upstream = ["https://github.com/rust-osdev/x86_64"]
@@ -11,6 +11,6 @@ provides = ["arch-bringup", "page-tables", "cpu-context-switch"]
 depends_on = ["SigmaOS-system"]
 
 [maturity]
-status = "Scaffold"
+status = "Implemented"
 test_evidence = "Compiles and passes AAA unit tests"
 next_milestone = "Hardware and runtime integration"
